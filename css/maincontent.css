@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
-.mcontent{
+/*탭크기의 화면일경우*/
+@media (min-width : 826px) and (max-width : 1400px) {
+
+}
+/*모바일 화면일 경우*/
+@media (max-width : 825px) {
+
+}
+
+#title {
+  font-family: Harlow Solid;
+  font-size: 100px;
+  text-shadow: 5px 5px 2px #c6c6c6;
+}
+
+.mcontent {
   width: auto;
   padding: 20px;
   margin-bottom: 20px;
