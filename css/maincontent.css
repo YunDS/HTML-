@@ -19,31 +19,34 @@
 }
 /*부제*/
 #sectitle{
+  font-size: 32px;
   padding-bottom: 20px;
   text-align: center;
   font-family: Harlow Solid;
   text-shadow: 3px 3px 2px #c6c6c6;
 }
 
-.navbar-brand {
-  font-size: 30px;
+#Welcome {
+  text-align: left;
+  width: 100%;
+  height: 50px;
+  background-color: gray;
+}
+
+#txt{
+  padding-left: 10px;
+  font-size: 35px;
   font-family: fromdamiM;
 }
 
-@media (min-width: 768px) {
-  .container {
-    width: 750px;
+@media (max-width: 589px) {
+  #txt{
+    font-size: 20px;
   }
 }
 
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 1170px;
+@media (min-width: 590px) and (max-width: 876px) {
+  #txt{
+    font-size: 28px;
   }
 }
