@@ -6,6 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Yun's 끄적블로그</title>
 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   <!-- 스크립트 부분. -->
   <script type="text/javascript" src="js/nav.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -16,6 +21,7 @@
 </head>
 
 <body>
+  <!--사이드메뉴-->
   <div id="sidemenu" class="menu">
     <a href="#" class="closebtn" onclick='closeNav()'>닫기</a>
     <a href="main.html">메인화면</a>
@@ -27,8 +33,14 @@
   </div>
   <span class="openmenu" onclick='openNav()'>메뉴열기</span>
   <div>
-    <h1 class="title">Yun's Travel Blog</h1>
+    <h1 id="title">Yun's Travel Blog</h1>
+    <h3 id="sectitle">Welcome to my travel Blog!!</h3>
   </div>
+
+  <!--인사말-->
+  <nav class="navbar bg-secondary navbar-dark">
+    <a class="navbar-brand">Welcome! 어서오세요! 저의 여행을 기록하는 블로그에 오신것을 환영합니다!</a>
+  </nav>
 
 </body>
 

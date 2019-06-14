@@ -1,14 +1,33 @@
 @charset "UTF-8";
 
-.title {
-  margin-right: auto;
-  margin-left: auto;
+/*프롬다미M 폰트 적용을 위한 url*/
+@font-face {
+  font-family: 'fromdamiM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_ten@1.0/fromdamiM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/*제목*/
+#title{
+  margin: 20px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
   font-family: Harlow Solid;
   font-size: 100px;
   text-shadow: 5px 5px 2px #c6c6c6;
+}
+/*부제*/
+#sectitle{
+  padding-bottom: 20px;
+  text-align: center;
+  font-family: Harlow Solid;
+  text-shadow: 3px 3px 2px #c6c6c6;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-family: fromdamiM;
 }
 
 @media (min-width: 768px) {
