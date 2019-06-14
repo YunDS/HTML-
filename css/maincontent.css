@@ -1,13 +1,30 @@
 @charset "UTF-8";
 
-#title {
+.title {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   text-align: center;
   font-family: Harlow Solid;
   font-size: 100px;
   text-shadow: 5px 5px 2px #c6c6c6;
-  padding-bottom: 50px;
 }
 
-.mcontent{
-  border: 1pt groove #3f51b5
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
 }
