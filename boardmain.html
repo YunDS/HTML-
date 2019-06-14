@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html lang="ko" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Yun's 끄적블로그</title>
-    <link rel="stylesheet" Type="text/css" href="css/menu.css" />
-  </head>
-  <body>
-    <div id="menu">
-      <ul>
-        <li><a href="main.html">Home</a></li>
-        <li><a href="intro.html">자기소개</a></li>
-        <li><a href="travellog.html">여행이력</a></li>
-        <li class="dropdown">
-          <a href="boardmain.html" class="dropbtn">게시판</a>
-          <div class="dropdown-content">
-            <a href="asiaboard.html">아시아</a>
-            <a href="europeboard.html">유럽</a>
-            <a href="americaboard.html">아메리카</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-    <h1>메인 게시판.</h1>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <!--스크립트파일 참조-->
+  <script type="text/javascript" src="js/nav.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!--CSS파일 참조-->
+  <link rel="stylesheet" Type="text/css" href="css/menu.css" />
+  <link rel="stylesheet" Type="text/css" href="css/maincontent.css" />
+
+  <title>Yun's 끄적블로그</title>
+
+</head>
+
+<body>
+  <div class="welcome">
+    <h1 id="title">Yun's Travel Blog</h1>
+  </div>
+
+  <div id="sidemenu" class="menu">
+    <a href="#" class="closebtn" onclick='closeNav()'>닫기</a>
+    <a href="main.html">메인화면</a>
+    <a href="intro.html">소개</a>
+    <a href="travellog.html">다녀온곳</a>
+    <a href="boardmain.html">게시판</a>
+    <a href="chatter.html">잡담</a>
+    <a href="contact.html">연락처</a>
+  </div>
+  <span class="openmenu" onclick='openNav()'>메뉴열기</span>
+
+  <h1>메인 게시판.</h1>
+</body>
+
 </html>

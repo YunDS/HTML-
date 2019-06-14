@@ -1,54 +1,69 @@
 @charset "UTF-8";
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+/*탭크기의 화면일경우*/
+@media (min-width : 826px) and (max-width : 1400px) {
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+  }
 }
 
-li {
-  float: left;
-}
-
-li a, .dropbtn {
-  display: inline-block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover, .dropdown:hover .dropbtn {
-  background-color: #68a4ff;
-}
-
-li.dropdown {
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+/*모바일 화면일 경우*/
+/* 사이드바 스타일 */
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 154, 200);
+  overflow-x: hidden;
+  transition: 0.5s ease-in-out;
+  padding-top: 60px;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+.menu a {
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
+  font-size: 25px;
+  color: #fff;
   display: block;
-  text-align: left;
+  transition: 0.2s ease-in-out;
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.menu a:hover, .offcanvas a:focus {
+  color: #000;
 }
 
-.dropdown:hover .dropdown-content {
-  display: block;
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 25px;
+  margin-left: 50px;
+}
+
+.openmenu:hover {
+  color: rgb(0, 154, 200);
+  transition: 0.5s ease-in-out;
+}
+
+.openmenu {
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+
+@media (max-width : 825px) {
+  .menu {
+    padding-top: 15px;
+  }
+
+  .menu a {
+    font-size: 18px;
+  }
 }
