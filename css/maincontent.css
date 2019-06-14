@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.mcontent{
+  width: auto;
+  padding: 20px;
+  margin-bottom: 20px;
+  float: left;
+  border: 1px solid #bcbcbc;
+}
